@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/14/18||15:47:40" using="Simscape Multibody Link Version 6.0" from="SolidWorks 25.5.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Unknown_Terrain" uid="Unknown_Terrain" version="183">
+<AssemblyFile name="Unknown_Terrain.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="BOT1-2" uid="BOT1-2" entityUid="BOT1*:*Default">
+<Transform>
+<Rotation>1 -2.8942375331273759e-14 4.0945580259688078e-12 2.8942375331274232e-14 1 -1.1737359862978331e-16 -4.0945580259688078e-12 1.1737359874828907e-16 1</Rotation>
+<Translation>0.38918549090758997 0.42070398265115244 0.8192950144144211</Translation>
+</Transform>
+</Instance>
+<Instance name="BOT2-1" uid="BOT2-1" entityUid="BOT2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.38918549090699955 0.42070398265040659 0.81929501441512231</Translation>
+</Transform>
+</Instance>
+<Instance name="BOT3-1" uid="BOT3-1" entityUid="BOT3*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.38918549090699955 0.42070398265040665 0.81929501441512231</Translation>
+</Transform>
+</Instance>
+<Instance name="BOT4-1" uid="BOT4-1" entityUid="BOT4*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.38918549090699955 0.42070398265040659 0.81929501441512231</Translation>
+</Transform>
+</Instance>
+<Instance name="PLATFORM-1" uid="PLATFORM-1" grounded="true" entityUid="PLATFORM*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.39136310264590557 0.41320398265040659 0.83117607196685439</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PLATFORM-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BOT2-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Parallel name="Parallel2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PLATFORM-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BOT3-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Parallel name="Parallel4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PLATFORM-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BOT4-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Parallel name="Parallel5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PLATFORM-1</Uid>
+</InstancePath>
+<Position>0 0.0020000000000000018 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BOT1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="BOT1" uid="BOT1*:*Default" version="221">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BOT1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.0376188287460493</Mass>
+<CenterOfMass>-0.00085217099576001608 0.026707992534935849 1.32953070444782e-05</CenterOfMass>
+<Inertia>0.0020893079131885034 0.0033394150248371897 0.001983581879773755 -5.1576518372687403e-07 7.329810864169901e-07 2.7994918980554696e-05</Inertia>
+</MassProperties>
+<GeometryFile name="BOT1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BOT2" uid="BOT2*:*Default" version="222">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BOT2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.0376188287460486</Mass>
+<CenterOfMass>-0.0008521709957600305 0.026707992534935828 1.3295307044478004e-05</CenterOfMass>
+<Inertia>0.0020893079131885043 0.0033394150248371901 0.0019835818797737559 -5.1576518372683825e-07 7.3298108641698734e-07 2.7994918980555411e-05</Inertia>
+</MassProperties>
+<GeometryFile name="BOT2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BOT3" uid="BOT3*:*Default" version="224">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BOT3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.0376188287460488</Mass>
+<CenterOfMass>-0.00085217099576003071 0.026707992534935811 1.3295307044477656e-05</CenterOfMass>
+<Inertia>0.0020893079131885013 0.0033394150248371901 0.001983581879773752 -5.1576518372686207e-07 7.3298108641698036e-07 2.7994918980555329e-05</Inertia>
+</MassProperties>
+<GeometryFile name="BOT3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BOT4" uid="BOT4*:*Default" version="223">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BOT4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.0376188287460486</Mass>
+<CenterOfMass>-0.000852170995760028 0.026707992534935839 1.3295307044477162e-05</CenterOfMass>
+<Inertia>0.0020893079131885069 0.0033394150248371901 0.0019835818797737576 -5.1576518372677832e-07 7.3298108641698819e-07 2.799491898055517e-05</Inertia>
+</MassProperties>
+<GeometryFile name="BOT4_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="PLATFORM" uid="PLATFORM*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="PLATFORM.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>18.000000000000007</Mass>
+<CenterOfMass>0 0.001 0</CenterOfMass>
+<Inertia>13.500006000000011 27.000000000000021 13.50000600000001 0 -1.2989609388114341e-15 0</Inertia>
+</MassProperties>
+<GeometryFile name="PLATFORM_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
